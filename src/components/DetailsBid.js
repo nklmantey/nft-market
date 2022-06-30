@@ -24,7 +24,7 @@ const DetailsBid = ({ bid }) => {
       <View>
         <Text style={{
           fontFamily: "THICCCBOI-Bold",
-          fontSize: SIZES.small,
+          fontSize: SIZES.medium-2,
           color: COLORS.primary,
         }}>
           Bid placed by {bid.name}
@@ -32,7 +32,7 @@ const DetailsBid = ({ bid }) => {
 
         <Text style={{
           fontFamily: "THICCCBOI-Bold",
-          fontSize: SIZES.small-2,
+          fontSize: SIZES.medium-2,
           color: COLORS.secondary,
           marginTop: 3
         }}>
