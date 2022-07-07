@@ -8,7 +8,7 @@ import DetailsBid from '../components/DetailsBid';
 import DetailsDesc from '../components/DetailsDesc';
 
 const DetailsHeader = ({ data, navigation }) => (
-  <View style={{ width: '100%', height: 373 }}>
+  <View style={{ width: '100%', height: 373, }}>
     <Image 
       source={data.image}
       resizeMode= "cover"
@@ -34,7 +34,7 @@ const Details = ({ route, navigation }) => {
   const { data } = route.params;
 
   return (
-    <View style={{flex: 1}}>
+    <View style={{flex: 1 }}>
       <View style={{
         width: '100%',
         position: "absolute",
@@ -57,7 +57,7 @@ const Details = ({ route, navigation }) => {
         renderItem={({ item }) => <DetailsBid bid={item} />}
         keyExtractor={item => item.id} 
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3, backgroundColor: 'white'}}
+        contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 5, backgroundColor: 'white'}}
         ListHeaderComponent={() => 
           <React.Fragment>
             <DetailsHeader data={data} navigation={navigation} />
